@@ -39,8 +39,7 @@ class Player:
             self.level -= 1
             self.experience += 100
             self.damage -= 5
-
-        else:
+        if self.health >= 100:
             print("Твой запас здоровья максимальный. Заходи в другой раз.")
 
     def change_level(self, experience_monster):
